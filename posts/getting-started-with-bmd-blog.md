@@ -1,17 +1,17 @@
-default_author, 26/09/2017
-Welcome to your minimalistic markdown blogging platform with category and search support.
 # BMD Blog
 
-![version-0-1-0](https://img.shields.io/badge/version-0.1.0-blue.svg)
+![status-dev](https://img.shields.io/badge/status-dev-yellow.svg) ![version-0-1-0](https://img.shields.io/badge/version-0.1.0-blue.svg)
 
 Yet another minimalistic markdown blogging platform with category and search support.
+
+[DEMO](http://bmd.beremaran.com/getting-started-with-bmd-blog)
 
 ## Getting Started
 
 ### Installation
 
 1. Download or clone this repository
-2. Run `composer update` and `bower update` before uploading on your computer or remote server after upload
+2. Run `composer update` before uploading on your computer or remote server after upload
 3. Upload to your server
 4. That's it.
 
