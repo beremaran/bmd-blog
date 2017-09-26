@@ -4,6 +4,8 @@
 
 Yet another minimalistic markdown blogging platform with category and search support.
 
+[DEMO](http://bmd.beremaran.com/getting-started-with-bmd-blog)
+
 ## Getting Started
 
 ### Installation
