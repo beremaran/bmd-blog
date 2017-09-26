@@ -1,6 +1,8 @@
+default_author, 26/09/2017
+Welcome to your minimalistic markdown blogging platform with category and search support.
 # BMD Blog
 
-![status-dev](https://img.shields.io/badge/status-dev-yellow.svg) ![version-0-1-0](https://img.shields.io/badge/version-0.1.0-blue.svg)
+![version-0-1-0](https://img.shields.io/badge/version-0.1.0-blue.svg)
 
 Yet another minimalistic markdown blogging platform with category and search support.
 

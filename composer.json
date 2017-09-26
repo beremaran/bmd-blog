@@ -1,0 +1,17 @@
+{
+  "name": "beremaran/bmd-blog",
+  "description": "Yet another minimalistic markdown blogging platform with category and search support.",
+  "type": "project",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Berke Emrecan Arslan",
+      "email": "berke@beremaran.com"
+    }
+  ],
+  "require": {
+    "slim/slim": "^3.8",
+    "slim/twig-view": "^2.3",
+    "erusev/parsedown": "^1.6"
+  }
+}

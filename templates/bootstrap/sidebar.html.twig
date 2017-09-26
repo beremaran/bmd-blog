@@ -1,0 +1,26 @@
+<h4>Categories</h4>
+<div class="panel panel-default">
+    <ul class="nav nav-pills nav-stacked">
+        {% for _category in categories %}
+            <li role="presentation">
+                <a href="{{ site_url }}/category/{{ _category.short_name }}">
+                    {{ _category.name }} ({{ _category.post_count }})
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+
+<h4>Latest Posts</h4>
+<div class="panel panel-default">
+    <ul class="nav nav-pills nav-stacked">
+        {% for _post in latestPosts %}
+            <li role="presentation">
+                <a href="{{ site_url }}/{{ _post.file }}">
+                    {{ _post.title }}<br>
+                    <small>{{ _post.date|date("d/m/Y") }}, {{ _post.author.fullName }}</small>
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>

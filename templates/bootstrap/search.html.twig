@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block mainContent %}
+
+    <h3>{% if posts|length == 0 %}No r{% else %} R{% endif %}esults for search '{{ q }}'</h3>
+    <p>{{ posts|length }} results.</p>
+
+    {% for post in posts %}
+        <div class="page-header">
+            <h3><a href="{{ site_url }}/{{ post.file }}">{{ post.title }}</a>
+                <small>({{ post.category }})&nbsp;{{ post.date|date('d/m/Y') }}, {{ post.author.fullName }}</small>
+            </h3>
+        </div>
+        <p>{{ post.short_text }}</p>
+    {% endfor %}
+
+{% endblock %}

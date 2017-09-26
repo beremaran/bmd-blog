@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block mainContent %}
+    <small>Posted by <a
+                href="mailto:{{ post.meta.author.email }}">{{ post.meta.author.fullName }}</a>, {{ post.meta.date|date("d/m/Y") }}
+    </small>
+    <hr>
+    {{ post.content|raw }}
+{% endblock %}

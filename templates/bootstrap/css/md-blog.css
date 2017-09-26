@@ -1,0 +1,31 @@
+.left-bar {
+    border-radius: 2px;
+    background-color: #ccc;
+}
+
+.right-bar {
+    border-radius: 2px;
+    background-color: #eee;
+}
+
+.bere-footer-container {
+    background-color: #222;
+    width: 100%;
+    min-width: 100%;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+
+.bere-footer-container a {
+    color: #f7ebb3;
+}
+
+.pushdown-1p {
+    padding-top: 1%;
+}
+
+.pushdown-10p {
+    padding-top: 10%;
+}

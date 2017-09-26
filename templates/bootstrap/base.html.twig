@@ -1,0 +1,15 @@
+{% include 'head.html.twig' %}
+{% include 'header.html.twig' %}
+<div class="row">
+    <div class="col-md-9">
+        {% block mainContent %}
+            {{ _content|raw }}
+        {% endblock %}
+        <div class="pushdown-10p"></div>
+    </div>
+    <div class="col-md-3">
+        {% include "sidebar.html.twig" %}
+    </div>
+</div>
+{% include 'footer.html.twig' %}
+{% include 'foot.html.twig' %}
