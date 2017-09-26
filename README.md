@@ -9,7 +9,7 @@ Yet another minimalistic markdown blogging platform with category and search sup
 ### Installation
 
 1. Download or clone this repository
-2. Run `composer update` and `bower update` before uploading on your computer or remote server after upload
+2. Run `composer update` before uploading on your computer or remote server after upload
 3. Upload to your server
 4. That's it.
 
