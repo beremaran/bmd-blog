@@ -7,10 +7,12 @@
  */
 
 /**
- * @param $author string
+ * @param $author array
  * @return string
  */
 function a_build_author_link($author)
 {
-    return '<a href="https://twitter.com/' . $author['twitter'] . '">' . $author['fullName'] . '</a>';
+    $url = strlen($author['twitter']) > 0 ? 'https://twitter.com/' . $author['twitter'] : '#';
+    $url = '<a href="' . $url . '">' . $author['fullName'] . '</a>';
+    return $url;
 }

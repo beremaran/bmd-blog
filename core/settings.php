@@ -8,8 +8,8 @@
 
 return [
     'settings' => [
-        'blogTitle' => 'MdBlog',
-        'site_url' => '',
+        'blogTitle' => 'BMD Blog',
+        'site_url' => 'http://localhost:3000',
         'template' => 'bootstrap',
         'default_category' => 'General',
 

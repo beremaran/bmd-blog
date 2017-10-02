@@ -13,6 +13,9 @@
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
                 <li><a href="{{ site_url }}">Home</a></li>
+                {% for page in pages %}
+                    <li><a href="{{ site_url }}/p/{{ page.short_name }}">{{ page.name }}</a></li>
+                {% endfor %}
             </ul>
             <div class="nav navbar-right">
                 <form class="navbar-form" role="search" method="post" action="{{ site_url }}/search">

@@ -13,12 +13,12 @@
  */
 function f_getFileList($dir = null, $extension = "*")
 {
-    global $CORE_DIR;
+    global $DATA_DIR;
 
     if ($dir === null)
         return null;
 
-    return glob($CORE_DIR . '../' . $dir . '/*.' . $extension);
+    return glob($DATA_DIR . '/' . $dir . '/*.' . $extension);
 }
 
 function f_getAuthors()
@@ -73,10 +73,10 @@ function f_getPosts($category = "", $with_content = false)
 
 function f_getPost($fileName, $build_path = false)
 {
-    global $CORE_DIR;
+    global $DATA_DIR;
 
     if ($build_path) {
-        $fileName = $CORE_DIR . '../posts/' . $fileName . '.md';
+        $fileName = $DATA_DIR . '/posts/' . $fileName . '.md';
     }
 
     $out = [
@@ -96,10 +96,13 @@ function f_getPost($fileName, $build_path = false)
     return $out;
 }
 
-function f_readLines($fileName, $count = 1)
+function f_readLines($fileName = "", $count = -1, $f = null)
 {
     $out = [];
-    $f = fopen($fileName, "r");
+
+    if ($f === null)
+        $f = fopen($fileName, "r");
+
     if ($f) {
         for ($i = 0; $i < $count; $i++) {
             $r = fgets($f);
@@ -119,4 +122,14 @@ function f_extractName($fileName)
     $fileName = explode('/', $fileName);
     $fileName = explode('.', $fileName[count($fileName) - 1]);
     return $fileName[count($fileName) - 2];
+}
+
+/**
+ * @param $fh
+ * @param $c int
+ */
+function f_skiplines($fh, $c)
+{
+    for ($i = 0; $i < $c; $i++)
+        fgets($fh);
 }

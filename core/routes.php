@@ -24,6 +24,15 @@ $app->post('/search[/]', function ($req, $res, $args) use ($app) {
     ]);
 });
 
+$app->get('/p/{page-name}[/]', function ($req, $res, $args) use ($app) {
+    $page = p_get_page($args['page-name']);
+
+    return $this->twig->render($res, 'page.html.twig', [
+        '_page' => $page,
+        'pageTitle' => $page['name']
+    ]);
+})->setName('blog.pages');
+
 $app->get('/category/{category-name}[/]', function ($req, $res, $args) use ($app) {
     $posts = f_getPosts($args['category-name']);
 

@@ -21,8 +21,7 @@ $app->add(function ($request, $response, $next) use ($app) {
 // Latest posts
 $app->add(function ($request, $response, $next) use ($app) {
     $view = $this->get('twig');
-
     $view->getEnvironment()->addGlobal('latestPosts', array_slice(f_getPosts(), 0, 5));
-
+    $view->getEnvironment()->addGlobal('pages', p_get_pages());
     return $next($request, $response);
 });

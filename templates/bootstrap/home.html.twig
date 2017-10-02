@@ -2,11 +2,10 @@
 
 {% block mainContent %}
     {% for post in posts %}
-        <div class="page-header">
-            <h3><a href="{{ site_url }}/{{ post.file }}">{{ post.title }}</a>
-                <small>({{ post.category }})&nbsp;{{ post.date|date('d/m/Y') }}, {{ post.author.fullName }}</small>
-            </h3>
-        </div>
+        <p class="post-title">
+            <a href="{{ site_url }}/{{ post.file }}">{{ post.title }}</a>
+            <small>({{ post.category }})&nbsp;{{ post.date|date('d/m/Y') }}, {{ post.author.fullName }}</small>
+        </p>
         <p>{{ post.short_text }}</p>
     {% endfor %}
 {% endblock %}

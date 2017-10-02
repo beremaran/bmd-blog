@@ -1,8 +1,8 @@
 # BMD Blog
 
-![status-dev](https://img.shields.io/badge/status-dev-yellow.svg) ![version-0-1-0](https://img.shields.io/badge/version-0.1.0-blue.svg)
+![status-dev](https://img.shields.io/badge/status-dev-yellow.svg) ![version-0-1-0](https://img.shields.io/badge/version-0.2.0-blue.svg)
 
-Yet another minimalistic markdown blogging platform with category and search support.
+Yet another minimalistic markdown blogging platform with category, pages and search support.
 
 [DEMO](http://bmd.beremaran.com/getting-started-with-bmd-blog)
 
@@ -70,6 +70,16 @@ beremaran, 26-09-2017
 ### Create a Template
 
 TODO
+
+## Changelog
+
+### 0.2.0
+* Changes in directory structure
+* Syntax highlighting (with [highlight.js](https://github.com/isagalaev/highlight.js))
+* Pages
+
+### 0.1.0
+* Released project.
 
 ## Contributing
 * I won't be accepting pull requests until version 1.0.0

@@ -7,6 +7,7 @@
  */
 
 $CORE_DIR = __DIR__ . '/core/';
+$DATA_DIR = __DIR__ . '/data/';
 
 include_once __DIR__ . '/vendor/autoload.php';
 
